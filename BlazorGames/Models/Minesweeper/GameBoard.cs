@@ -1,4 +1,4 @@
-﻿using BlazorGames.Models.Minesweeper.Enums;
+﻿  using BlazorGames.Models.Minesweeper.Enums;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

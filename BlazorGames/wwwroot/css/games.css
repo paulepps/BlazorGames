@@ -31,7 +31,6 @@
     background-color: white;
 }
 
-
 .minesweeper-game div {
     line-height: 0;
     font-size: 0;
@@ -286,73 +285,22 @@
     height: 26px;
 }
 
-.tictactoe-board {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    max-width: 490px;
+.blackjack-drawdeck {
+    height: 190px;
+    width: 140px;
+    float: left;
 }
 
-.tictactoe-column {
-    min-width: 60px;
-    min-height: 60px;
-    height: 100%;
+.blackjack-drawdeck:not(:first-child) {
+    margin-left: -130px;
 }
 
-.tictactoe-gamepiece {
-    border: solid 1px black;
-    min-height: 60px;
-    min-width: 60px;
+.blackjack-card {
+    height: 190px;
+    width: 140px;
+    float: left;
 }
 
-.tictactoe-x {
-    background-image: url("../images/tictactoe/letter-x.png");
-    background-repeat: no-repeat;
-}
-
-.tictactoe-o {
-    background-image: url("../images/tictactoe/letter-o.png");
-    background-repeat: no-repeat;
-}
-
-.tictactoe-blank {
-    background-image: none;
-}
-
-.gameoflife-container div {
-    background-image: url(../images/gameoflife/gameoflife-sprites.png);
-    width: 40px;
-    height: 40px;
-}
-
-.gameoflife-deadcell-faces {
-    background-position: 0px 0px;
-}
-
-.gameoflife-alivecell-faces {
-    background-position: -41px 0px;
-}
-
-.gameoflife-deadcell-cats {
-    background-position: -82px 0px;
-}
-
-.gameoflife-alivecell-cats {
-    background-position: -122px 0px;
-}
-
-.gameoflife-deadcell-aliens {
-    background-position: 0px -40px;
-}
-
-.gameoflife-alivecell-aliens {
-    background-position: -41px -40px;
-}
-
-.gameoflife-deadcell-boxes {
-    background-position: -82px -40px;
-}
-
-.gameoflife-alivecell-boxes {
-    background-position: -122px -40px;
+.blackjack-card:not(:first-child) {
+    margin-left: -100px;
 }

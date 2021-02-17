@@ -41,13 +41,13 @@ app {
             margin-left: 1.5rem;
         }
 
-.main .top-row a:first-child {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+        .main .top-row a:first-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
 .sidebar {
-    background-image: linear-gradient(180deg, #0366d6 0%, #191b1f 70%);
+    background-image: linear-gradient(180deg, #9900cc 0%, #191b1f 70%);
 }
 
     .sidebar .top-row {
@@ -129,17 +129,17 @@ app {
     z-index: 1000;
 }
 
-#blazor-error-ui .dismiss {
-    cursor: pointer;
-    position: absolute;
-    right: 0.75rem;
-    top: 0.5rem;
-}
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
 
 .inline-headers h1, .inline-headers h2,
 .inline-headers h3, .inline-headers h4,
 .inline-headers h5, .inline-headers h6,
-.inline-headers a{
+.inline-headers a {
     display: inline-block;
     vertical-align: baseline;
 }
@@ -189,5 +189,3 @@ app {
         display: block;
     }
 }
-
-
