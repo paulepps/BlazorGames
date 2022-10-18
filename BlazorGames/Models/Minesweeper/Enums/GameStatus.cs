@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace BlazorGames.Models.Minesweeper.Enums
+﻿namespace BlazorGames.Models.Minesweeper.Enums
 {
     public enum GameStatus
     {

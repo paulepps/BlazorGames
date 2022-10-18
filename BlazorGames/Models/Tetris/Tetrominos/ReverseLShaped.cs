@@ -1,8 +1,4 @@
 using BlazorGames.Models.Tetris.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BlazorGames.Models.Tetris.Tetrominos
 {
@@ -26,8 +22,8 @@ namespace BlazorGames.Models.Tetris.Tetrominos
             {
                 CellCollection cells = new CellCollection();
                 cells.Add(CenterPieceRow, CenterPieceColumn);
-                
-                switch(Orientation)
+
+                switch (Orientation)
                 {
                     case TetrominoOrientation.LeftRight:
                         cells.Add(CenterPieceRow, CenterPieceColumn + 1);

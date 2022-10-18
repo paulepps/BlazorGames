@@ -1,9 +1,8 @@
-﻿  using BlazorGames.Models.Minesweeper.Enums;
+﻿using BlazorGames.Models.Minesweeper.Enums;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 
 namespace BlazorGames.Models.Minesweeper
 {
@@ -17,12 +16,12 @@ namespace BlazorGames.Models.Minesweeper
 
         public Stopwatch Stopwatch { get; set; }
 
-        public int MinesRemaining 
-        {  
+        public int MinesRemaining
+        {
             get
             {
                 return MineCount - Panels.Where(x => x.IsFlagged).Count();
-            } 
+            }
         }
 
         public GameBoard()

@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace BlazorGames.Models.Tetris.Enums
 {
     /// <summary>
@@ -10,7 +5,7 @@ namespace BlazorGames.Models.Tetris.Enums
     /// </summary>
     public enum GameState
     {
-        NotStarted, 
+        NotStarted,
         Playing, //Game playing normally
         GameOver
     }

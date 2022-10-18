@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace BlazorGames.Models.Minesweeper
+﻿namespace BlazorGames.Models.Minesweeper
 {
     public class Panel
     {
@@ -24,7 +19,7 @@ namespace BlazorGames.Models.Minesweeper
 
         public void Flag()
         {
-            if(!IsRevealed)
+            if (!IsRevealed)
             {
                 IsFlagged = !IsFlagged;
             }

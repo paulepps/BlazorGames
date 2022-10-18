@@ -43,7 +43,7 @@ namespace BlazorGames.Models.Tetris
         /// <param name="cssClass"></param>
         public void AddMany(List<Cell> cells, string cssClass)
         {
-            foreach(var cell in cells)
+            foreach (var cell in cells)
             {
                 _cells.Add(new Cell(cell.Row, cell.Column, cssClass));
             }
@@ -77,9 +77,9 @@ namespace BlazorGames.Models.Tetris
         public List<Cell> GetLowest()
         {
             List<Cell> cells = new List<Cell>();
-            foreach(var cell in _cells)
+            foreach (var cell in _cells)
             {
-                if(!Contains(cell.Row - 1, cell.Column))
+                if (!Contains(cell.Row - 1, cell.Column))
                 {
                     cells.Add(cell);
                 }

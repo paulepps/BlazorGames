@@ -1,8 +1,4 @@
 using BlazorGames.Models.Tetris.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BlazorGames.Models.Tetris.Tetrominos
 {
@@ -54,9 +50,9 @@ namespace BlazorGames.Models.Tetris.Tetrominos
         /// <summary>
         /// Rotates the tetromino around the center piece. Tetrominos always rotate clockwise.
         /// </summary>
-        public void Rotate() 
-        { 
-            switch(Orientation)
+        public void Rotate()
+        {
+            switch (Orientation)
             {
                 case TetrominoOrientation.UpDown:
                     Orientation = TetrominoOrientation.RightLeft;
@@ -79,7 +75,7 @@ namespace BlazorGames.Models.Tetris.Tetrominos
 
             //If the new rotation of the tetromino means it would be outside the
             //play area, shift the center space so as to keep the entire tetromino visible.
-            if(coveredSpaces.HasColumn(-1))
+            if (coveredSpaces.HasColumn(-1))
             {
                 CenterPieceColumn += 2;
             }
@@ -115,7 +111,7 @@ namespace BlazorGames.Models.Tetris.Tetrominos
         public int Drop()
         {
             int scoreCounter = 0;
-            while(CanMoveDown())
+            while (CanMoveDown())
             {
                 MoveDown();
                 scoreCounter++;

@@ -18,7 +18,7 @@ namespace BlazorGames.Models.Blackjack
             }
         }
         public string ImageName { get; set; }
-        
+
         public int Score
         {
             get
